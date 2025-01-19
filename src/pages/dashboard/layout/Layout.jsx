@@ -9,7 +9,7 @@ const Layout = () => {
     setSidebarOpen((prev) => !prev);
   }, [setSidebarOpen]);
   return (
-    <div className="flex flex-col w-screen h-screen overflow-hidden md:flex-row bg-gradient-to-r from-green-300/50 to-teal-300">
+    <div className="flex flex-col w-screen h-screen overflow-hidden md:flex-row">
       {/* Sidebar */}
       {/* 
         {!isConnected && (
@@ -29,9 +29,15 @@ const Layout = () => {
       <div className="flex flex-col w-full">
         <div className=" shadow-2xl drop-shadow-lg">
           {/* <Header sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} /> */}
-          <div className="bg-white flex flex-row justify-between items-center p-4">
-            <div >
-              <Button className="p-5" sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar}>Click</Button>
+          <div className="bg-white md:hidden flex flex-row justify-between items-center p-4">
+            <div>
+              <Button
+                className="p-5"
+                sidebarOpen={sidebarOpen}
+                toggleSidebar={toggleSidebar}
+              >
+                Click
+              </Button>
             </div>
             <div className="bg-blue-500 rounded-full p-5"></div>
           </div>
