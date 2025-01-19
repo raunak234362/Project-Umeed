@@ -16,8 +16,13 @@ import ServicesSection from "../components/service/Service";
 import FounderInfo from "../components/aboutFounder/FounderInfo";
 import ContactUS from "../components/contact/ContactUS";
 
+//Admin
+import Layout from "../pages/dashboard/layout/Layout";
+import Sidebar from "./dashboard/sidebar/Sidebar";
+
+
 //Login
-import Login from "../pages/dashboard/login/Login";
+import Login from "./login/Login";
 
 //export
 export {
@@ -32,5 +37,7 @@ export {
   ServicesSection,
   FounderInfo,
   ContactUS,
+  Sidebar,
   Login,
+  Layout,
 };

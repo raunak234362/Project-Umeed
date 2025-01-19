@@ -1,5 +1,5 @@
 import App from "../App";
-import { Login } from "../pages";
+import { Login, Layout } from "../pages";
 import Home from "../pages/landing/Home";
 
 const routes = [
@@ -11,11 +11,18 @@ const routes = [
         path: "",
         element: <Home />,
       },
-      {
-        path: "/admin",
-        element: <Login />,
-      },
     ],
+  },
+  {
+    path: "/admin",
+    element: <Layout />,
+    children: [
+      
+    ],
+  },
+  {
+    path: "Login",
+    element: <Login />,
   },
 ];
 export default routes;
