@@ -1,5 +1,5 @@
 import App from "../App";
-import Layout from "../pages/dashboard/layout/Layout";
+import { Login } from "../pages";
 import Home from "../pages/landing/Home";
 
 const routes = [
@@ -12,8 +12,8 @@ const routes = [
         element: <Home />,
       },
       {
-        path: "/dashboard",
-        element: <Layout />,
+        path: "/admin",
+        element: <Login />,
       },
     ],
   },

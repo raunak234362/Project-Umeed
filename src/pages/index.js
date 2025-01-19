@@ -15,6 +15,10 @@ import Mission from "../components/mission/Mission";
 import ServicesSection from "../components/service/Service";
 import FounderInfo from "../components/aboutFounder/FounderInfo";
 import ContactUS from "../components/contact/ContactUS";
+
+//Login
+import Login from "../pages/dashboard/login/Login";
+
 //export
 export {
   Header,
@@ -28,4 +32,5 @@ export {
   ServicesSection,
   FounderInfo,
   ContactUS,
+  Login,
 };

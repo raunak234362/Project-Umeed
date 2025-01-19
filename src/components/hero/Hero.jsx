@@ -2,7 +2,7 @@ import { Button } from "../../pages/index";
 
 const Hero = () => {
   return (
-    <section className="min-h-[70vh] md:pt-10 lg:pt-0 bg-[#2563EB] flex justify-center items-center h-full text-white">
+    <section className="min-h-[70vh] md:pt-10 lg:pt-0 bg-blue-800 flex justify-center items-center h-full text-white">
       <main className="container mx-auto px-4 max-sm:py-24 max-w-7xl">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-8">
           <div className="space-y-8 animate-slide-in-left">
