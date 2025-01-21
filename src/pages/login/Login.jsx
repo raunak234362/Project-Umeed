@@ -1,59 +1,57 @@
-/* eslint-disable no-unused-vars */
+// Import necessary Firebase functions and hooks
+// import { useState } from "react";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { app } from "../../firebase/firebase"; // Adjust the path as per your project structure
 import { useForm } from "react-hook-form";
 
 const Login = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit } = useForm();
 
-  const onSubmit = async (data) => {
-    console.log(data);
+  const auth = getAuth(app);
+  console.log(auth);
+  const handleLogin = async (data) => {
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      alert("Login successful!");
+    } catch (err) {
+      alert(err.message);
+    }
   };
+
   return (
-    <div className="bg-blue-800 h-screen items-center flex">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-          <div className="p-10 flex items-center justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1602522537969-6d3f5f7e8f1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-              alt="login"
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-          <div className="p-10 flex items-center justify-center">
-            <form
-              onSubmit={handleSubmit(onSubmit)}
-              className="space-y-6 w-full"
+    <div className="h-screen bg-gradient-to-b from-blue-gray-600 to-bg-blue-600  mx-auto p-4">
+      <div className="text-white text-center text-2xl font-bold py-4">
+        Welcome Back to the Umeed Kiran Admin Portal
+      </div>
+      <div className=" w-full flex h-full justify-center items-center">
+        <div className="bg-white p-4 rounded-lg shadow-lg w-5/12">
+          <h2 className="text-center font-bold my-5 text-2xl">Login</h2>
+          <form onSubmit={handleSubmit(handleLogin)} className="space-y-4">
+            <div>
+              <label>Email:</label>
+              <input
+                type="email"
+                className="w-full border border-blue-gray-300 p-2 rounded-lg"
+                {...register("email", { required: "Email is required" })}
+              />
+            </div>
+
+            <div>
+              <label>Password:</label>
+              <input
+                type="password"
+                className="w-full border border-blue-gray-300 p-2 rounded-lg"
+                {...register("password", { required: "Password is required" })}
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white p-2 rounded-lg"
             >
-              <h2 className="text-3xl font-bold text-white text-center">
-                Welcome Back
-              </h2>
-              <div className="space-y-4">
-                <label className="text-white">Email</label>
-                <input
-                  type="text"
-                  className="w-full border border-blue-gray-300 p-2 rounded-lg"
-                />
-              </div>
-              <div className="space-y-4">
-                <label className="text-white">Password</label>
-                <input
-                  type="password"
-                  className="w-full border border-blue-gray-300 p-2 rounded-lg"
-                />
-              </div>
-              <div className="w-full justify-center flex">
-                <button
-                  type="submit"
-                  className="w-full bg-[#FFD700] text-black p-2 rounded-lg"
-                >
-                  Login
-                </button>
-              </div>
-            </form>
-          </div>
+              Login
+            </button>
+          </form>
         </div>
       </div>
     </div>
