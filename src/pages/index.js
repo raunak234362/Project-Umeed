@@ -18,8 +18,13 @@ import ContactUS from "../components/contact/ContactUS";
 
 //Admin
 import Layout from "../pages/dashboard/layout/Layout";
-import Sidebar from "./dashboard/sidebar/Sidebar";
-
+import Sidebar from "../components/Dashboard/sidebar/Sidebar";
+import DashboardHeader from "../components/Dashboard/header/Header";
+import DashboardSidebar from "../components/Dashboard/sidebar/Sidebar";
+import Blogs from "../components/Dashboard/blog/Blogs";
+import Portfolio from "../components/Dashboard/portfolio/Portfolio";
+import Skills from "../components/Dashboard/skills/Skills";
+import Profile from "../components/Dashboard/profile/Profile";
 
 //Login
 import Login from "./login/Login";
@@ -40,4 +45,10 @@ export {
   Sidebar,
   Login,
   Layout,
+  DashboardHeader,
+  DashboardSidebar,
+  Blogs,
+  Portfolio,
+  Skills,
+  Profile
 };

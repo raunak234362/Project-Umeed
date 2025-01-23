@@ -1,21 +1,25 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBkuzQtr4gzrXUQHhvld3Ka-HGfDIxmXog",
-  authDomain: "umeedkiran-82ca2.firebaseapp.com",
-  databaseURL: "https://umeedkiran-82ca2-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "umeedkiran-82ca2",
-  storageBucket: "umeedkiran-82ca2.firebasestorage.app",
-  messagingSenderId: "139017774571",
-  appId: "1:139017774571:web:dfd3109abed1aab1e9e5ae",
-  measurementId: "G-SDHY4RDW84",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+export { app, analytics, db, storage };
 
-export { app, analytics };
