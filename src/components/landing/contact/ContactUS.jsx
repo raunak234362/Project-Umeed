@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import { Phone, Mail, Check } from "lucide-react";
 import { useForm } from "react-hook-form";
-import Input from "../fields/Input";
-import Button from "../fields/Button";
+import Input from "../../fields/Input";
+import Button from "../../fields/Button";
 
 const ContactUS = () => {
   const {

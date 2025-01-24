@@ -8,20 +8,20 @@ import Button from "../components/fields/Button";
 import Input from "../components/fields/Input";
 
 //Landing Pages
-import Hero from "../components/hero/Hero";
-import About from "../components/about/About";
-import Vision from "../components/vision/Vision";
-import Mission from "../components/mission/Mission";
-import ServicesSection from "../components/service/Service";
-import FounderInfo from "../components/aboutFounder/FounderInfo";
-import ContactUS from "../components/contact/ContactUS";
+import Hero from "../components/landing/hero/Hero";
+import About from "../components/landing/about/About";
+import Vision from "../components/landing/vision/Vision";
+import Mission from "../components/landing/mission/Mission";
+import ServicesSection from "../components/landing/service/Service";
+import FounderInfo from "../components/landing/aboutFounder/FounderInfo";
+import ContactUS from "../components/landing/contact/ContactUS";
 
 //Admin
 import Layout from "../pages/dashboard/layout/Layout";
 import Sidebar from "../components/Dashboard/sidebar/Sidebar";
 import DashboardHeader from "../components/Dashboard/header/Header";
 import DashboardSidebar from "../components/Dashboard/sidebar/Sidebar";
-import Blogs from "../components/Dashboard/blog/Blogs";
+import Blog from "../components/Dashboard/blog/Blog";
 import Portfolio from "../components/Dashboard/portfolio/Portfolio";
 import Skills from "../components/Dashboard/skills/Skills";
 import Profile from "../components/Dashboard/profile/Profile";
@@ -47,7 +47,7 @@ export {
   Layout,
   DashboardHeader,
   DashboardSidebar,
-  Blogs,
+  Blog,
   Portfolio,
   Skills,
   Profile

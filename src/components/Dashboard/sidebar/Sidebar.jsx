@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 const DashboardSidebar = () => {
   const menuItems = [
     { name: "Dashboard", path: "/admin", icon: HomeIcon },
-    { name: "Blogs", path: "/admin/blogs", icon: DocumentTextIcon },
+    { name: "Blogs", path: "/admin/blog", icon: DocumentTextIcon },
     { name: "Portfolio", path: "/admin/portfolio", icon: BriefcaseIcon },
     { name: "Skills", path: "/admin/skills", icon: AcademicCapIcon },
     { name: "Profile", path: "/admin/profile", icon: UserCircleIcon },

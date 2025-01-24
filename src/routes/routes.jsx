@@ -1,6 +1,6 @@
 import App from "../App";
 
-import { Login, Layout, Portfolio, Skills, Profile, Blogs } from "../pages";
+import { Login, Layout, Portfolio, Skills, Profile, Blog } from "../pages";
 import Home from "../pages/landing/Home";
 
 const routes = [
@@ -19,8 +19,8 @@ const routes = [
     element: <Layout />,
     children: [
       {
-        path: "blogs",
-        element: <Blogs />,
+        path: "blog",
+        element: <Blog />,
       },
       {
         path: "portfolio",

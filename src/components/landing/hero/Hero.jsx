@@ -1,4 +1,4 @@
-import { Button } from "../../pages/index";
+import { Button } from "../../../pages/index";
 
 const Hero = () => {
   return (
