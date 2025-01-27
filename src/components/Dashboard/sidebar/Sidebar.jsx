@@ -13,7 +13,7 @@ const DashboardSidebar = () => {
     { name: "Dashboard", path: "/admin", icon: HomeIcon },
     { name: "Blogs", path: "/admin/blog", icon: DocumentTextIcon },
     { name: "Portfolio", path: "/admin/portfolio", icon: BriefcaseIcon },
-    { name: "Skills", path: "/admin/skills", icon: AcademicCapIcon },
+    { name: "Mission", path: "/admin/mission", icon: AcademicCapIcon },
     { name: "Profile", path: "/admin/profile", icon: UserCircleIcon },
   ];
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const DashboardSidebar = () => {
             <NavLink
               key={item.path}
               to={item.path}
-              end={item.path === "/admin"} 
+              end={item.path === "/admin"}
               className={({ isActive }) =>
                 `flex items-center px-4 py-3 text-gray-700 rounded-lg transition-colors ${
                   isActive ? "bg-blue-50 text-blue-700" : "hover:bg-gray-100"

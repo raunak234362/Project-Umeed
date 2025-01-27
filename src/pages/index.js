@@ -23,7 +23,7 @@ import DashboardHeader from "../components/Dashboard/header/Header";
 import DashboardSidebar from "../components/Dashboard/sidebar/Sidebar";
 import Blog from "../components/Dashboard/blog/Blog";
 import Portfolio from "../components/Dashboard/portfolio/Portfolio";
-import Skills from "../components/Dashboard/skills/Skills";
+import DashboardMission from "../components/Dashboard/mission/Mission";
 import Profile from "../components/Dashboard/profile/Profile";
 
 //Login
@@ -47,8 +47,8 @@ export {
   Layout,
   DashboardHeader,
   DashboardSidebar,
+  DashboardMission,
   Blog,
   Portfolio,
-  Skills,
   Profile
 };

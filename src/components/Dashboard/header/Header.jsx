@@ -1,17 +1,23 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import { useNavigate } from "react-router-dom";
+import { ArrowLeftOnRectangleIcon } from "@heroicons/react/20/solid";
 const DashboardHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Dashboard", path: "/dashboard" },
-    { name: "Blogs", path: "/dashboard/blogs" },
-    { name: "Portfolio", path: "/dashboard/portfolio" },
-    { name: "Skills", path: "/dashboard/skills" },
-    { name: "Profile", path: "/dashboard/profile" },
+    { name: "Dashboard", path: "/admin" },
+    { name: "Blogs", path: "/admin/blogs" },
+    { name: "Portfolio", path: "/admin/portfolio" },
+    { name: "Mission", path: "/admin/mission" },
+    { name: "Profile", path: "/admin/profile" },
   ];
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    console.log("Logging out...");
+    navigate("/");
+  };
 
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
@@ -39,6 +45,7 @@ const DashboardHeader = () => {
             {menuItems.map((item) => (
               <li key={item.path}>
                 <NavLink
+                  end={item.path === "/admin"}
                   to={item.path}
                   className={({ isActive }) =>
                     `block px-4 py-2 rounded-lg text-gray-700 ${
@@ -54,6 +61,15 @@ const DashboardHeader = () => {
               </li>
             ))}
           </ul>
+          <div className="p-4 border-t">
+            <button
+              onClick={handleLogout}
+              className="flex items-center w-full px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              <ArrowLeftOnRectangleIcon className="w-5 h-5 mr-3" />
+              <span>Logout</span>
+            </button>
+          </div>
         </nav>
       )}
     </header>

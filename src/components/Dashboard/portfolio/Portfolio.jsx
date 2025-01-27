@@ -18,6 +18,7 @@ const Portfolio = () => {
   const fetchPortfolioItems = async () => {
     try {
       const querySnapshot = await getDocs(collection(db, 'portfolio'));
+      console.log(querySnapshot);
       const items = querySnapshot.docs.map(doc => ({
         id: doc.id,
         ...doc.data()
