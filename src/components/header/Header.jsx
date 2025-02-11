@@ -26,6 +26,11 @@ const Header = ()=> {
                 Blog
               </Link>
             </li>
+            <li>
+              <Link to="/gallery" className="hover:underline">
+                Gallery
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

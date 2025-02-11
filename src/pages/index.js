@@ -15,7 +15,7 @@ import Mission from "../components/landing/mission/Mission";
 import ServicesSection from "../components/landing/service/Service";
 import FounderInfo from "../components/landing/aboutFounder/FounderInfo";
 import ContactUS from "../components/landing/contact/ContactUS";
-
+import Gallery from "../components/gallery/gallery";
 //Admin
 import Layout from "../pages/dashboard/layout/Layout";
 import Sidebar from "../components/Dashboard/sidebar/Sidebar";
@@ -41,6 +41,7 @@ export {
   Mission,
   ServicesSection,
   FounderInfo,
+  Gallery,
   ContactUS,
   Sidebar,
   Login,
