@@ -18,7 +18,7 @@ const FounderInfo = () => {
             <h3 className="text-2xl font-bold text-blue-600 mb-2">Archana Srivastava</h3>
             <p className="text-gray-600 mb-4">Founder, Umeed Kiran</p>
             <a
-              href="https://instagram.com"
+               href="https://www.instagram.com/umeedkiran_/"
               className="text-blue-600 hover:text-blue-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
