@@ -16,7 +16,6 @@ import ServicesSection from "../components/landing/service/Service";
 import FounderInfo from "../components/landing/aboutFounder/FounderInfo";
 import ContactUS from "../components/landing/contact/ContactUS";
 
-
 //Gallery
 import Gallery from "../components/gallery/Gallery";
 
@@ -55,5 +54,5 @@ export {
   DashboardMission,
   Blog,
   Portfolio,
-  Profile
+  Profile,
 };

@@ -10,7 +10,7 @@ const Header = ()=> {
           Umeed Kiran
         </Link>
         <nav>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-6">
             <li>
               <Link to="/" className="hover:underline">
                 Home
