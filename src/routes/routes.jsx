@@ -1,9 +1,8 @@
-import App from "../App";
+import Layout from "../pages/landing/layout";
 import ErrorHandling from "../components/ErrorHandling";
 
 import {
   Login,
-  Layout,
   Portfolio,
   Profile,
   Blog,
@@ -15,7 +14,7 @@ import Home from "../pages/landing/Home";
 const routes = [
   {
     path: "/",
-    element: <App />,
+    element: <Layout />,
     children: [
       {
         path: "",

@@ -1,20 +1,25 @@
-
-import { Hero,About, Header, Mission, Vision, ServicesSection, FounderInfo, Footer, ContactUS } from '../../pages/index'
+import {
+  Hero,
+  About,
+  Mission,
+  Vision,
+  ServicesSection,
+  FounderInfo,
+  ContactUS,
+} from "../../pages/index";
 
 const Home = () => {
   return (
     <div>
-      <Header />
-      <Hero/>
-      <About/>
-      <Vision/>
-      <Mission/>
-      <ServicesSection/>
-      <FounderInfo/>
-      <ContactUS/>
-      <Footer/>
+      <Hero />
+      <About />
+      <Vision />
+      <Mission />
+      <ServicesSection />
+      <FounderInfo />
+      <ContactUS />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
