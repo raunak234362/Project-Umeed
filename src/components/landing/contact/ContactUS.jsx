@@ -97,7 +97,7 @@ const ContactUS = () => {
                   <div>
                     <div className="font-medium">Social Media</div>
                     <a
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/umeedkiran_/"
                       className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       Instagram: @umeedkiran_

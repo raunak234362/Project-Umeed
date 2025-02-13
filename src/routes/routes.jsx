@@ -1,6 +1,15 @@
 import App from "../App";
+import ErrorHandling from "../components/ErrorHandling";
 
-import { Login, Layout, Portfolio, Profile, Blog, DashboardMission } from "../pages";
+import {
+  Login,
+  Layout,
+  Portfolio,
+  Profile,
+  Blog,
+  DashboardMission,
+  Gallery,
+} from "../pages";
 import Home from "../pages/landing/Home";
 
 const routes = [
@@ -11,6 +20,10 @@ const routes = [
       {
         path: "",
         element: <Home />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
       },
     ],
   },
@@ -40,5 +53,6 @@ const routes = [
     path: "Login", //for login page
     element: <Login />,
   },
+  { path: "*", element: <ErrorHandling /> },
 ];
 export default routes;

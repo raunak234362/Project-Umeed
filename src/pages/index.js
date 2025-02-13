@@ -16,6 +16,10 @@ import ServicesSection from "../components/landing/service/Service";
 import FounderInfo from "../components/landing/aboutFounder/FounderInfo";
 import ContactUS from "../components/landing/contact/ContactUS";
 
+
+//Gallery
+import Gallery from "../components/gallery/Gallery";
+
 //Admin
 import Layout from "../pages/dashboard/layout/Layout";
 import Sidebar from "../components/Dashboard/sidebar/Sidebar";
@@ -38,6 +42,7 @@ export {
   Hero,
   About,
   Vision,
+  Gallery,
   Mission,
   ServicesSection,
   FounderInfo,
